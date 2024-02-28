@@ -12,7 +12,7 @@ int main(){
         cin >> a >> b >> c;
         if(a == b && b == 1 || b == c && c == 1 || c == a && a == 1  ) {
             count  = count + 1; 
-        }
+        } 
     }
     cout << count;
     return 0;
