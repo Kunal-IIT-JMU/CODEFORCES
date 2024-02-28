@@ -1,2 +1,1 @@
-# CODEFORCES
-Contains my codes of the codeforces questions I solved for future reference.
+<img src="https://yxxshin.github.io/images/CodeForces_Cover.jpg" align = "center">
