@@ -1,3 +1,4 @@
+#Kunal Sharma IIT JAMMU
 n = int(input())
 result = input()
 d = result.count("D")
