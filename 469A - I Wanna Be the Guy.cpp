@@ -1,27 +1,35 @@
 //Kunal Sharma IIT JAMMU
 #include <bits/stdc++.h>
-
 using namespace std;
 
-int main(){
-    int n;
-    cin >> n;
-    int k;
-    vector <int> levels;
-    while(cin >> k){
-        if(k != 0){
-            levels.push_back(k);
+int main()
+{
+    int array[250];
+    int n , p , q;
+    cin >> n >> p;
+    int count = 0;
+
+    for(int i =  0 ; i < p ; i++){
+        cin >> array[i];
+    }
+    cin >> q;
+    for(int i = p ; i < p + q ; i++){
+        cin >> array[i];
+    }
+
+    sort(array , array+(p+q));
+
+    for(int i = 0 ; i < p+q ; i++){
+        if(array[i] != array[i+1]){
+            count++;
         }
-        else{
-            break;
-        }
     }
-    set <int> soln(levels.begin(),levels.end());
-    if(soln.size()==4){
-        cout << "I become the guy.";
+
+    if(n == (count)){
+        cout << "I become the guy." <<endl;
+    }else{
+        cout << "Oh, my keyboard!" << endl;
     }
-    else{
-        cout << "Oh, my keyboard!";
-    }
+
     return 0;
 }
