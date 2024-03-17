@@ -1,3 +1,4 @@
+#Kunal Sharma IIT JAMMU
 r = int(input())
 for i in range (0,r):
     n = int(input())
